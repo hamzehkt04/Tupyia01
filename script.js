@@ -1,16 +1,12 @@
-// ==========================================================================
-// Tupyia — shared site behaviour
-// ==========================================================================
-
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---------- active nav link, based on <body data-page="..."> ---------- */
+  /*active nav link*/
   const currentPage = document.body.dataset.page;
   document.querySelectorAll('.nav-link[data-page]').forEach(link => {
     if (link.dataset.page === currentPage) link.classList.add('active');
   });
 
-  /* ---------- header shadow on scroll ---------- */
+  /* header shadow  */
   const header = document.querySelector('.site-header');
   const setHeaderState = () => {
     if (!header) return;
@@ -19,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setHeaderState();
   window.addEventListener('scroll', setHeaderState, { passive: true });
 
-  /* ---------- mobile menu ---------- */
+  /* mobile menu */
   const navPanel = document.querySelector('.nav-panel');
   const menuToggle = document.querySelector('.menu-toggle');
   if (navPanel && menuToggle) {
@@ -39,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------- scroll-reveal ---------- */
+  /* scroll reveal */
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealEls.length) {
     const io = new IntersectionObserver((entries) => {
@@ -55,18 +51,18 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => el.classList.add('is-visible'));
   }
 
-  /* ---------- stagger reveal delay for grouped items ---------- */
+  /*  stagger reveal - groups items */
   document.querySelectorAll('[data-reveal-group]').forEach(group => {
     Array.from(group.children).forEach((child, i) => {
       child.style.transitionDelay = `${Math.min(i * 90, 360)}ms`;
     });
   });
 
-  /* ---------- footer year ---------- */
+  /* footer year */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- contact form (front-end only demo) ---------- */
+  /* contact form  */
   const form = document.getElementById('contact-form');
   if (form) {
     const status = document.getElementById('form-status');
@@ -93,9 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       status.textContent = 'جارٍ الإرسال...';
       status.className = 'form-status';
-
-      // NOTE: this is a front-end only demo. To actually deliver messages,
-      // connect this form to a backend or a form service (see project notes).
+      
       setTimeout(() => {
         status.textContent = 'تم إرسال رسالتك بنجاح، سنتواصل معك في أقرب وقت ممكن.';
         status.className = 'form-status ok';

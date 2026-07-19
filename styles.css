@@ -1,9 +1,3 @@
-/* ==========================================================================
-   Tupyia — Design System
-   Palette pulled from brand reference: warm burnt-orange over deep ink,
-   crisp paper white, Apple-style generous whitespace + pill controls.
-   ========================================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap');
 
 :root {
@@ -82,7 +76,7 @@ button{ font-family:inherit; }
   clip:rect(0 0 0 0); white-space:nowrap;
 }
 
-/* ---------------------------------- Header --------------------------------- */
+/* Header  */
 
 .site-header{
   position:sticky; top:0; z-index:100;
@@ -185,7 +179,7 @@ button{ font-family:inherit; }
 .nav-panel.open .menu-toggle span::before{ top:0; transform:rotate(45deg); }
 .nav-panel.open .menu-toggle span::after{ top:0; transform:rotate(-45deg); }
 
-/* ---------------------------------- Buttons --------------------------------- */
+/* Buttons  */
 
 .btn{
   display:inline-flex;
@@ -223,7 +217,7 @@ button{ font-family:inherit; }
 .btn-sm{ padding:9px 18px; font-size:13.5px; }
 .btn svg{ width:16px; height:16px; }
 
-/* ---------------------------------- Hero --------------------------------- */
+/* Hero*/
 
 .hero{
   position:relative;
@@ -232,7 +226,6 @@ button{ font-family:inherit; }
   background:var(--ink);
 }
 .hero::before{
-  /* crate / pallet-rack crosshatch, tinted with the brand duotone */
   content:"";
   position:absolute; inset:0;
   background:
@@ -302,7 +295,7 @@ button{ font-family:inherit; }
 .hero.hero-compact .hero-inner{ padding:76px 0 64px; }
 .hero.hero-compact h1{ font-size:clamp(30px, 4.4vw, 46px); }
 
-/* ---------------------------------- Sections --------------------------------- */
+/* Sections */
 
 .section{ padding:96px 0; }
 .section-alt{ background:var(--mist); }
@@ -325,7 +318,7 @@ button{ font-family:inherit; }
 .section-head h2{ font-size:clamp(26px, 3.4vw, 40px); color:var(--ink); }
 .section-head p{ font-size:17px; }
 
-/* ---------------------------------- Pillar / feature cards --------------------------------- */
+/* Pillar  */
 
 .grid{
   display:grid;
@@ -370,7 +363,7 @@ button{ font-family:inherit; }
 .card-link svg{ width:15px; height:15px; transition:transform .25s var(--ease); }
 .card:hover .card-link svg{ transform:translateX(-4px); }
 
-/* ---------------------------------- Split layout --------------------------------- */
+/*Split layout */
 
 .split{
   display:grid;
@@ -424,7 +417,7 @@ button{ font-family:inherit; }
   margin-top:1px;
 }
 
-/* ---------------------------------- Process (legit sequence) --------------------------------- */
+/*Process  */
 
 .process{
   display:grid;
@@ -450,7 +443,7 @@ button{ font-family:inherit; }
 .step h3{ font-size:18px; color:var(--ink); margin-bottom:.5em; }
 .step p{ font-size:14.5px; }
 
-/* ---------------------------------- Values grid --------------------------------- */
+/*Values grid  */
 
 .value-card{
   padding:28px 24px;
@@ -461,7 +454,7 @@ button{ font-family:inherit; }
 .value-card h3{ font-size:17px; color:var(--ink); }
 .value-card p{ font-size:14.5px; margin-bottom:0; }
 
-/* ---------------------------------- Work / portfolio --------------------------------- */
+/*  Work  */
 
 .work-card{
   border-radius:var(--radius-m);
@@ -499,7 +492,7 @@ button{ font-family:inherit; }
 .work-body h3{ font-size:18px; color:var(--ink); margin-bottom:.4em; }
 .work-body p{ font-size:14.5px; margin-bottom:0; }
 
-/* ---------------------------------- CTA banner --------------------------------- */
+/*  banner  */
 
 .cta-banner{
   position:relative;
@@ -522,7 +515,7 @@ button{ font-family:inherit; }
 .cta-banner p{ color:rgba(255,255,255,.9); max-width:520px; margin-left:auto; margin-right:auto; }
 .cta-banner .hero-actions{ justify-content:center; margin-top:8px; }
 
-/* ---------------------------------- Contact --------------------------------- */
+/*Contact  */
 
 .contact-grid{
   display:grid;
@@ -582,7 +575,7 @@ button{ font-family:inherit; }
 .info-row h4{ font-family:var(--font-display); font-size:15px; color:var(--ink); margin:0 0 4px; }
 .info-row p{ font-size:14.5px; margin:0; }
 
-/* ---------------------------------- Footer --------------------------------- */
+/*Footer  */
 
 .site-footer{
   background:var(--ink);
@@ -629,7 +622,7 @@ button{ font-family:inherit; }
   color:rgba(255,255,255,.5);
 }
 
-/* ---------------------------------- Reveal-on-scroll --------------------------------- */
+/* on-scroll */
 
 .reveal{
   opacity:0;
@@ -641,7 +634,7 @@ button{ font-family:inherit; }
   .reveal{ opacity:1; transform:none; transition:none; }
 }
 
-/* ---------------------------------- Responsive --------------------------------- */
+/*  Responsive  */
 
 @media (max-width: 980px){
   .grid-5{ grid-template-columns:repeat(2, 1fr); }

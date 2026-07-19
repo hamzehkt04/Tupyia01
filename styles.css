@@ -686,3 +686,14 @@ button{ font-family:inherit; }
   .field-row{ grid-template-columns:1fr; }
   .cta-banner{ padding:48px 24px; }
 }
+.logo img.web-logo {
+  height: 40px;       
+  width: auto;        
+  display: block;
+}
+.site-footer .logo img.web-logo {
+  height: 50px;          
+  width: auto;           
+  margin-bottom: 20px;   
+  display: inline-block;
+}

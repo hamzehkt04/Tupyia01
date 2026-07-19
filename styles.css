@@ -698,9 +698,9 @@ button{ font-family:inherit; }
 }
 
 .site-footer .logo img.web-logo {
-  height: 20px !important;
-  width: 20px !important;
-  margin-bottom: 5px;
+  height: 50px !important;
+  width: auto !important;
+  margin-bottom: 0px;
 }
 .site-header .logo img.web-logo {
   height: 48px !important;

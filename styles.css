@@ -719,3 +719,29 @@ button{ font-family:inherit; }
   display: block !important;
   object-fit: contain !important;
 }
+@media (max-width: 860px) {
+  .nav-panel {
+    position: fixed !important;
+    top: 60px !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    height: calc(100vh - 60px) !important;
+    background: var(--paper) !important;
+    transition: opacity .25s ease, transform .25s ease, visibility .25s ease !important;
+  }
+
+  .nav-panel:not(.open) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateY(-8px) !important;
+  }
+
+  .nav-panel.open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: translateY(0) !important;
+  }
+}

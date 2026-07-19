@@ -708,3 +708,14 @@ button{ font-family:inherit; }
 .footer-brand p {
   margin-top: 0;
 }
+.site-footer .logo {
+  display: block !important;
+  width: max-content !important;
+}
+
+.site-footer .logo img {
+  height: 75px !important;
+  width: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}

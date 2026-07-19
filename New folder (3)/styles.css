@@ -692,3 +692,14 @@ button{ font-family:inherit; }
   .field-row{ grid-template-columns:1fr; }
   .cta-banner{ padding:48px 24px; }
 }
+.logo img.web-logo {
+  height: 40px;       /* Adjust this value to make the logo larger or smaller */
+  width: auto;        /* This maintains the original aspect ratio */
+  display: block;
+}
+.site-footer .logo img.web-logo {
+  height: 50px;          /* Slightly larger than the header logo so it stands out */
+  width: auto;           /* Keeps the logo aspect ratio perfect */
+  margin-bottom: 20px;   /* Adds a clean space between the logo and the Arabic text below it */
+  display: inline-block;
+}

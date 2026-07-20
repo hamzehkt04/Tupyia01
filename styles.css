@@ -1,9 +1,3 @@
-/* ==========================================================================
-   Tupyia — Design System
-   Palette pulled from brand reference: warm burnt-orange over deep ink,
-   crisp paper white, Apple-style generous whitespace + pill controls.
-   ========================================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap');
 
 :root {
@@ -707,28 +701,4 @@ button{ font-family:inherit; }
 }
 .footer-brand p {
   margin-top: 0;
-}
-.hero-section {
-  position: relative;
-  overflow: hidden; /* Keeps decorative elements inside the box */
-}
-@media (max-width: 768px) {
-  .hero-content, .story-section {
-    text-align: right; 
-    display: flex;
-    flex-direction: column; /* Stacks elements vertically on mobile */
-    align-items: flex-start; /* Aligns items to the right side in RTL */
-  }
-}
-@media (max-width: 768px) {
-  body, section, .container {
-    padding-left: 16px;  /* Adds space on the left */
-    padding-right: 16px; /* Adds space on the right */
-    box-sizing: border-box; /* Ensures padding doesn't cause horizontal overflow */
-  }
-}
-@media (max-width: 768px) {
-  .desktop-menu {
-    display: none; /* Hides desktop links on mobile */
-  }
 }

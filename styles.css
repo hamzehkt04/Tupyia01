@@ -523,7 +523,7 @@ button{ font-family:inherit; }
   display:grid;
   grid-template-columns:1.1fr .9fr;
   gap:56px;
-  align-items:start;
+  align-items:stretch;
 }
 .field{ margin-bottom:20px; }
 .field label{
@@ -709,11 +709,9 @@ button{ font-family:inherit; }
   object-fit: contain;
 }
 .contact-grid {
-  align-items: start; 
+  align-items: stretch; 
 }
-.contact-card, 
-.contact-info, 
-.contact-sidebar {
+.info-card{
   position: sticky;
   top: 100px;
   z-index: 10;
